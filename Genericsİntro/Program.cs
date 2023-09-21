@@ -4,16 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Matematik
+namespace Genericsİntro
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            DortIslem dortIslem = new DortIslem();
-            dortIslem.Topla(5,6);
+            MyList<string> isimler = new MyList<string>();
+            isimler.Add("Enes");
 
-            dortIslem.Topla(81,31);
+            List<string> liste = new List<string>();
+            Console.WriteLine(liste.Count);
+
+
         }
     }
 }
